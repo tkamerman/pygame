@@ -9,6 +9,7 @@
   Version: 0.1 - * created node class to hold the properties of each location within the game universe
                    (the current values are placeholders) 
                  * completed game logic, the game functions as expected to meet the basic requirements
+           0.2 - * finilized game strings
 """
 
 import time
@@ -30,12 +31,10 @@ def printWithDelay(text):
                 
 def initLocations():
     node1 = node()
-    node1.description = """
-You are on a planet full of dragons. In front of you,
-you see two caves. In one cave, the dragon is friendly
-and will share his treasure with you. The other dragon
-is greedy and hungry, and will eat you on sight.
-"""
+    node1.description = 'You are on a planet full of dragons. In front of you,\n'
+                        'you see two caves. In one cave, the dragon is friendly\n'
+                        'and will share his treasure with you. The other dragon\n'
+                        'is greedy and hungry, and will eat you on sight.\n'
     node1.prompt = "Which cave will you go into? (1 or 2)"
     node1.outcomes = ["you went to node 2", "you went to node 3"]
     node2 = node()
