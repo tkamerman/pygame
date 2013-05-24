@@ -9,7 +9,7 @@
   Version: 0.1 - * created node class to hold the properties of each location within the game universe
                    (the current values are placeholders) 
                  * completed game logic, the game functions as expected to meet the basic requirements
-           0.2 - * finilized game strings
+           0.2 - * finalized game strings
 """
 
 class node:
@@ -84,10 +84,10 @@ def initNodes():
                          'people of all creeds and nations". Congratulations, you\n'
                          'have learned the meaning of life.\n')]
     
+    #create a tree of nodes that will be traversed by selecting one of the options given by the prompt
     node1.children = [node2, node3]
     node2.children = [node4, node5]
     node3.children = [node6, node7]
-
     return node1
 
 def makeChoice(prompt, options):
